@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
-from .models import Comic, Serie, Collection, Editor
-from .serializers import ComicSerializer, SerieSerializer, CollectionSerializer, EditorSerializer
+from .models import Comic, Serie, Collection, Editor, Author
+from .serializers import ComicSerializer, SerieSerializer, CollectionSerializer, EditorSerializer, AuthorSerializer
 
 # Create your views here.
 
@@ -20,3 +20,7 @@ class CollectionViewset(viewsets.ModelViewSet):
 class EditorViewset(viewsets.ModelViewSet):
     queryset = Editor.objects.all()
     serializer_class = EditorSerializer
+
+class AuthorViewset(viewsets.ModelViewSet):
+    queryset = Author.objects.all()
+    serializer_class = AuthorSerializer
