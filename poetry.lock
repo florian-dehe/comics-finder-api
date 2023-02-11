@@ -40,6 +40,21 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "dj-rest-auth"
+version = "2.2.7"
+description = "Authentication and Registration in Django Rest Framework"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+Django = ">=2.0"
+djangorestframework = ">=3.7.0"
+
+[package.extras]
+with_social = ["django-allauth (>=0.40.0,<0.53.0)"]
+
+[[package]]
 name = "django"
 version = "4.1.2"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -107,8 +122,8 @@ optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-testing = ["pytest-benchmark", "pytest"]
-dev = ["tox", "pre-commit"]
+dev = ["pre-commit", "tox"]
+testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "py"
@@ -185,13 +200,14 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "204f47a24e2b7f31b05f4ba0cac69f7fc7642c1ea5e21624896f728aee303de2"
+content-hash = "baf9156259ab960caee68c706cbba0a66b4159a101c0ba61a5ac9845eb5b7e3e"
 
 [metadata.files]
 asgiref = []
 atomicwrites = []
 attrs = []
 colorama = []
+dj-rest-auth = []
 django = []
 django-cors-headers = []
 djangorestframework = []

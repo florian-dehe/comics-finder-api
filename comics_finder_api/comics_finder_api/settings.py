@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Libs
     "rest_framework",
+    "rest_framework.authtoken",
     "corsheaders",
+    "dj_rest_auth",
     # API
     "comics",
 ]
@@ -130,3 +132,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # CORS Headers
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Rest framework
+REST_SESSION_LOGIN = True
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
