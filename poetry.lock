@@ -83,6 +83,19 @@ python-versions = ">=3.7"
 Django = ">=3.2"
 
 [[package]]
+name = "django-environ"
+version = "0.9.0"
+description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
+category = "main"
+optional = false
+python-versions = ">=3.4,<4"
+
+[package.extras]
+develop = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)", "furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
+docs = ["furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
+testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
+
+[[package]]
 name = "djangorestframework"
 version = "3.14.0"
 description = "Web APIs for Django, made easy."
@@ -200,7 +213,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "baf9156259ab960caee68c706cbba0a66b4159a101c0ba61a5ac9845eb5b7e3e"
+content-hash = "87a50101e1cff5d0dc64726c70a1927420f1ae475a62186ea26302b3e1ea490d"
 
 [metadata.files]
 asgiref = []
@@ -210,6 +223,7 @@ colorama = []
 dj-rest-auth = []
 django = []
 django-cors-headers = []
+django-environ = []
 djangorestframework = []
 iniconfig = []
 packaging = []
