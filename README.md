@@ -13,6 +13,7 @@ poetry install
 ### Run Dev
 
 ```bash
+poetry run ./comics_finder_api/manage.py migrate
 poetry run ./comics_finder_api/manage.py runserver
 ```
 
@@ -21,13 +22,14 @@ poetry run ./comics_finder_api/manage.py runserver
 ```bash
 cd comics_finder_api
 poetry add gunicorn
+poetry run ./manage.py migrate --settings=comics_finder_api.settings.prod
 poetry run gunicorn --env DJANGO_SETTINGS_MODULE=comics_finder_api.settings.prod comics_finder_api.wsgi
 ```
 
 ## Docker image
 
 ```bash
-docker build .
+docker build . -t <img-name>
 ```
 
 ## Environment Variables
