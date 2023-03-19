@@ -42,21 +42,6 @@ optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 
 [[package]]
-name = "dj-rest-auth"
-version = "2.2.8"
-description = "Authentication and Registration in Django Rest Framework"
-category = "main"
-optional = false
-python-versions = ">=3.5"
-
-[package.dependencies]
-Django = ">=2.0"
-djangorestframework = ">=3.7.0"
-
-[package.extras]
-with_social = ["django-allauth (>=0.40.0,<0.53.0)"]
-
-[[package]]
 name = "django"
 version = "4.1.7"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -116,14 +101,6 @@ description = "brain-dead simple config-ini parsing"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
-
-[[package]]
-name = "logging"
-version = "0.4.9.6"
-description = "A logging module for Python"
-category = "main"
-optional = false
-python-versions = "*"
 
 [[package]]
 name = "packaging"
@@ -209,20 +186,18 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "7f34267e5789cfab91e8c8909b8bae9a2823414590b37c9bbde1984e55c323ea"
+content-hash = "1cfacac06d97fd99f97f34ffbaa81d6e693bcb1db62cb4ad985727fcce96c493"
 
 [metadata.files]
 asgiref = []
 atomicwrites = []
 attrs = []
 colorama = []
-dj-rest-auth = []
 django = []
 django-cors-headers = []
 django-environ = []
 djangorestframework = []
 iniconfig = []
-logging = []
 packaging = []
 pluggy = []
 py = []
