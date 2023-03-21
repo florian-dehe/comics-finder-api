@@ -16,7 +16,6 @@ RUN apk update \
 
 # Install dependencies
 COPY ./pyproject.toml .
-RUN poetry add gunicorn psycopg2 --lock
 RUN poetry export -f requirements.txt --output requirements.txt
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /app/wheels -r requirements.txt
 

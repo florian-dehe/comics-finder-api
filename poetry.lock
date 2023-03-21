@@ -95,6 +95,20 @@ django = ">=3.0"
 pytz = "*"
 
 [[package]]
+name = "gunicorn"
+version = "20.1.0"
+description = "WSGI HTTP Server for UNIX"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+eventlet = ["eventlet (>=0.24.1)"]
+gevent = ["gevent (>=1.4.0)"]
+setproctitle = ["setproctitle"]
+tornado = ["tornado (>=0.2)"]
+
+[[package]]
 name = "iniconfig"
 version = "2.0.0"
 description = "brain-dead simple config-ini parsing"
@@ -121,6 +135,14 @@ python-versions = ">=3.6"
 [package.extras]
 dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
+
+[[package]]
+name = "psycopg2"
+version = "2.9.5"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.6"
 
 [[package]]
 name = "py"
@@ -186,7 +208,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "1cfacac06d97fd99f97f34ffbaa81d6e693bcb1db62cb4ad985727fcce96c493"
+content-hash = "9bc24bf4bab8e5ca4c7bdf6647eb1a8089567ed298ba38091b0bd1c759abbb72"
 
 [metadata.files]
 asgiref = []
@@ -197,9 +219,11 @@ django = []
 django-cors-headers = []
 django-environ = []
 djangorestframework = []
+gunicorn = []
 iniconfig = []
 packaging = []
 pluggy = []
+psycopg2 = []
 py = []
 pytest = []
 pytz = []
